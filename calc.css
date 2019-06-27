@@ -58,3 +58,37 @@ h1 {
   justify-content: center;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+  body,
+  html {
+    background-color: lightblue;
+
+    align-content: center;
+  }
+  h1 {
+    position: relative;
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .container {
+    display: block;
+  }
+  .firstnumber {
+    display: block;
+    position: relative;
+    left: 15%;
+  }
+  .secondnumber {
+    display: block;
+    float: left;
+    position: relative;
+    left: 15%;
+  }
+  .grid-container {
+    display: block;
+    text-align: center;
+  }
+}

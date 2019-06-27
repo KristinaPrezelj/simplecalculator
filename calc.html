@@ -11,21 +11,28 @@
   <body>
       <h1>VERY SIMPLE CALCULATOR</h1>
     <div class="container">
+            
       <div class="firstnumber">
+            <form action="calc.php" method="POST"> 
         <p>First number:</p>
-        <input type="number" id="fn" onKeyUp="clicked()"/>
+        <input type="number" name="fn" id="fn" onKeyUp="clicked()"/>
        
         <p id="displayfn"></p>
+        <input type="submit">
+    </form>
+    
       </div>
-
+    
       <div class="secondnumber">
         <p>Second number:</p>
-        <input type="number" id="sn" onKeyUp="clicked()"/>
+        <input type="number" name="sn" id="sn" onKeyUp="clicked()"/>
         
         <p id="displaysn"></p>
       </div>
+      
+   
     </div>
-    <div></div>
+   
       <div class="grid-container">
         <div class="grid-item">
           <button id="add"  onclick="add()">+</button>
